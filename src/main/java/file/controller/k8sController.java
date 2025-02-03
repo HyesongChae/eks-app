@@ -20,9 +20,4 @@ public class k8sController {
 	public String GetStatus3 () {
 		return "Status - returned by Pod" ;
 	}
-	
-	@GetMapping(value = "/api/status4")
-	public String GetStatus4 () {
-		return "Status - returned by Pod" ;
-	}
 }
