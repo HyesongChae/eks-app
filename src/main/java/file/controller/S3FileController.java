@@ -21,7 +21,7 @@ public class S3FileController {
 	
 	@GetMapping(value = "/api/s3/status")
 	public String checkStatus () {
-		return "good";
+		return "good222";
 	}
 	
 	@PostMapping(value = "/api/s3/files")
