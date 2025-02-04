@@ -13,11 +13,11 @@ public class k8sController {
 	
 	@GetMapping(value = "/api/status2")
 	public String GetStatus2 () {
-		return "Status - returned by Pod" ;
+		return "Status - returned by Pod2" ;
 	}
 	
 	@GetMapping(value = "/api/status3")
 	public String GetStatus3 () {
-		return "Status - returned by Pod" ;
+		return "Status - returned by Pod3" ;
 	}
 }
