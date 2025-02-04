@@ -19,6 +19,11 @@ public class S3FileController {
 	
 	private final S3Service s3Service;
 	
+	@GetMapping(value = "/api/s3/status")
+	public String checkStatus () {
+		return "good";
+	}
+	
 	@PostMapping(value = "/api/s3/files")
 	public void uploadS3File(@RequestPart(value = "file", required = false) MultipartFile file) {
 		try {
