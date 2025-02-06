@@ -39,7 +39,7 @@ public class S3Service {
     // 파일 업로드
 	@Transactional
 	public void uploadS3File(MultipartFile file) throws Exception {
-		System.out.println("S3Service : uploadS3File");
+		System.out.println("S3Service : uploadS3File22");
 		
 		if(file == null) {
 			throw new Exception("파일 전달 오류 발생");
