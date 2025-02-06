@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import file.service.S3Service_;
+import file.service.S3Service;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 public class S3FileController {
 	
-	private final S3Service_ s3Service;
+	private final S3Service s3Service;
 	
 	@GetMapping(value = "/api/s3/status")
 	public String checkStatus () {
